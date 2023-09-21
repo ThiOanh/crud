@@ -276,6 +276,17 @@ export default function Products() {
 
   return (
     <>
+    <div>
+        <Link to="/products">
+          <Button type="primary">Product</Button>
+        </Link>
+        <Link to="/categories">
+          <Button type="primary">Category</Button>
+        </Link>
+        <Link to="/suppliers">
+          <Button type="primary">Supplier</Button>
+        </Link>
+      </div>
       {contextHolder}
 
       {/* <ProductForm
