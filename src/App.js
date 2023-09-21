@@ -12,7 +12,6 @@ import ProductDetail from 'pages/product/ProductDetail';
 import NotFound from 'pages/notFound';
 
 import './App.css';
-import { Button } from 'antd';
 
 function App() {
   const navigate = useNavigate();
@@ -29,8 +28,8 @@ function App() {
 
 
   return (
-    <>
-      
+
+  
     !token ? <Routes>
       <Route path="login" element={<Login />} />
     </Routes> : <Routes>
@@ -42,7 +41,7 @@ function App() {
       <Route path="suppliers" element={<SupplierPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
-    </>
+
   );
 }
 
